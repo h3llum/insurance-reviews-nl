@@ -11,6 +11,6 @@ input:focus, select, button:focus {
 body{
     font-family: $font-family;
     font-weight: 400;
-    background: #fff;
+    background: lighten($background-secondary, 40%);
     color: $text-color;
 }

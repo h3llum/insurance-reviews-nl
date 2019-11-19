@@ -1,0 +1,32 @@
+.insurer-overview {
+    list-style-type: none;
+
+    &__insurer {
+        @include clearfix;
+        margin: .6rem 0;
+        padding: .6rem;
+        border: 1px solid lighten($background-secondary, 20%);
+        background: #fff;
+
+        &__name {
+            font-size: 14pt;
+            font-weight: 600;
+            margin: 0 0 .4rem;
+        }
+
+        &__parent {
+            margin: 0 0 .4rem;
+        }
+
+        &__contracts {
+            @include clearfix;
+
+            &__hospital{
+                float:left;
+                margin: 0 .5rem 0 0
+            }
+        }
+
+    }
+
+}

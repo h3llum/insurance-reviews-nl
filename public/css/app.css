@@ -1260,7 +1260,7 @@ button:focus {
 body {
   font-family: "Alata", sans-serif;
   font-weight: 400;
-  background: #fff;
+  background: #eef2f3;
   color: #533747;
 }
 
@@ -1288,5 +1288,52 @@ header .navigation__brand {
   line-height: 6.25rem;
   font-size: 30pt;
   text-decoration: none;
+}
+
+h1 {
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+h2 {
+  margin: 1.5rem 0;
+}
+
+.insurer-overview {
+  list-style-type: none;
+}
+
+.insurer-overview__insurer {
+  margin: 0.6rem 0;
+  padding: 0.6rem;
+  border: 1px solid #b2c3c9;
+  background: #fff;
+}
+
+.insurer-overview__insurer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.insurer-overview__insurer__name {
+  font-size: 14pt;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+
+.insurer-overview__insurer__parent {
+  margin: 0 0 0.4rem;
+}
+
+.insurer-overview__insurer__contracts:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.insurer-overview__insurer__contracts__hospital {
+  float: left;
+  margin: 0 0.5rem 0 0;
 }
 

@@ -20,6 +20,7 @@ class CreateInsurersTable extends Migration
             $table->string('logo');
             $table->integer('parent_id')->unsigned();
             $table->longText('description');
+            $table->integer('uzovi');
             $table->timestamps();
         });
     }

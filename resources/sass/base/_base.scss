@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input:focus, select, button:focus {
+    outline:0;
+}
+
+body{
+    font-family: $font-family;
+    font-weight: 400;
+    background: #fff;
+    color: $text-color;
+}

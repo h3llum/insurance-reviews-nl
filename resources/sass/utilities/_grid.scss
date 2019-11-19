@@ -1,0 +1,60 @@
+.container{
+    position: relative;
+    width: 95%;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0;
+    @include clearfix;
+}
+
+
+.grid{
+
+    @mixin grid {
+        float: left;
+        position: relative;
+        @include clearfix;
+    }
+
+    @for $i from 1 through 12 {
+        &--#{$i} {
+            @include grid;
+            width: 100 / 12 * $i * 1%;
+
+            &--stick-to-bottom {
+                position: absolute;
+                bottom: 0;
+            }
+
+            &--tablet-landscape-down--full {
+                @include grid;
+                width: 100 / 12 * $i * 1%;
+
+                @include for-tablet-landscape-down{
+                    width: 100%;                    
+                }
+            }
+
+            &--tablet-portrait-down--full {
+                @include grid;
+                width: 100 / 12 * $i * 1%;
+
+                @include for-tablet-portrait-down{
+                    width: 100%;   
+                }
+            }
+
+            
+            &--desktop-down--full {
+                @include grid;
+                width: 100 / 12 * $i * 1%;
+                
+                @include for-desktop-down{
+                    width: 100%;                    
+                }
+            }
+            
+        }
+    }
+
+}

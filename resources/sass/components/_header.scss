@@ -1,0 +1,20 @@
+header{
+    @include clearfix;
+    background: $background-primary;
+    width: 100%;
+    color: #fff;
+    height: 6.25rem;
+   
+    a, a:visited, a:active{
+        color: #fff;
+    }
+
+    .navigation{
+        &__brand{
+            height: 6.25rem;
+            line-height: 6.25rem;
+            font-size: 30pt;
+            text-decoration: none;
+        }
+    }
+}

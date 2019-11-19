@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class InsurerController extends Controller
 {
+
+    // Hack, hack, hack :D
+    public function crawl()
+    {
+        echo "Start crawling for insurers";
+
+        exit;
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +24,7 @@ class InsurerController extends Controller
      */
     public function index()
     {
-        //
+ 
     }
 
     /**

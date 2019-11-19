@@ -3,10 +3,13 @@
 
     &__insurer {
         @include clearfix;
-        margin: .6rem 0;
-        padding: .6rem;
-        border: 1px solid lighten($background-secondary, 20%);
+        margin: 1rem 0;
+        padding: 1rem;
         background: #fff;
+
+        &:first-child{
+            margin: 0 0 1rem;
+        }
 
         &__name {
             font-size: 14pt;
@@ -20,6 +23,11 @@
 
         &__contracts {
             @include clearfix;
+
+            &__title{
+                margin: 1rem 0 .3rem;
+                font-size: 11pt;
+            }
 
             &__hospital{
                 float:left;

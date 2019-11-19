@@ -4,7 +4,7 @@
 <div class="container">
     
     <div class="grid--12">
-        <h1>Insurer overview</h1>
+        <h1>Zorgverzekeraar overzicht</h1>
     </div>
 
     <div class="grid--8">
@@ -14,8 +14,11 @@
             <li class="insurer-overview__insurer">
                 <div class="grid--8">
                     <div class="insurer-overview__insurer__name">{{$insurer->name}}</div>
-                    <div class="insurer-overview__insurer__parent">{{$insurer->parent}}</div>
+                    <div class="insurer-overview__insurer__parent">Concern: {{$insurer->parent}}</div>
                     <div class="insurer-overview__insurer__contracts">
+                        <div class="insurer-overview__insurer__contracts__title">
+                            Contracten met:
+                        </div>
                         <div class="insurer-overview__insurer__contracts__hospital">
                             UMCG
                         </div>

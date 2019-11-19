@@ -1304,9 +1304,8 @@ h2 {
 }
 
 .insurer-overview__insurer {
-  margin: 0.6rem 0;
-  padding: 0.6rem;
-  border: 1px solid #b2c3c9;
+  margin: 1rem 0;
+  padding: 1rem;
   background: #fff;
 }
 
@@ -1314,6 +1313,10 @@ h2 {
   content: "";
   display: table;
   clear: both;
+}
+
+.insurer-overview__insurer:first-child {
+  margin: 0 0 1rem;
 }
 
 .insurer-overview__insurer__name {
@@ -1330,6 +1333,11 @@ h2 {
   content: "";
   display: table;
   clear: both;
+}
+
+.insurer-overview__insurer__contracts__title {
+  margin: 1rem 0 0.3rem;
+  font-size: 11pt;
 }
 
 .insurer-overview__insurer__contracts__hospital {
